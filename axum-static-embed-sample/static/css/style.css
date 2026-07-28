@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: #1e293b;
+}
+
+.nav a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+main {
+    max-width: 640px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    line-height: 1.6;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #38bdf8;
+    color: #0f172a;
+    font-weight: 600;
+    cursor: pointer;
+}

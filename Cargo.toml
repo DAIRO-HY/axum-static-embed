@@ -1,0 +1,3 @@
+[workspace]
+resolver = "3"
+members = ["axum-static-embed-sample", "axum-static-embed"]

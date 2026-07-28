@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>axum-static-embed sample</title>
+    <link rel="icon" href="/favicon.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+{{template include/nav}}
+
+<main>
+    <h1>axum-static-embed 示例</h1>
+    <p>这个页面、下面的 CSS/JS 以及 favicon 都是在<strong>编译期</strong>被打包进二进制文件的，
+        运行时不依赖任何外部静态文件目录。</p>
+    <ul>
+        <li>本页面顶部的导航栏来自 <code>include/nav.tpl.html</code> 模板片段（注意：模板替换是对全文做正则匹配，
+            同一个模板调用在正文里出现几次就会被替换几次）。</li>
+        <li>本页面与 <code>css/style.css</code>、<code>js/app.js</code> 均在编译期做了 gzip 压缩。</li>
+        <li><code>favicon.png</code> 未被压缩，直接从源文件 <code>include_bytes!</code>。</li>
+    </ul>
+    <button id="btn">点我</button>
+</main>
+
+<script src="/js/app.js"></script>
+</body>
+</html>

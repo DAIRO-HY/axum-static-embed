@@ -1,0 +1,16 @@
+[package]
+name = "axum-static-embed"
+version = "0.0.1"
+edition = "2024"
+description = "Embed static assets into an Axum app at compile time, with HTML template includes and optional gzip compression."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/DAIRO-HY/axum-static-embed"
+readme = "README.md"
+keywords = ["axum", "static", "embed", "web", "gzip"]
+categories = ["web-programming::http-server", "compression"]
+
+[dependencies]
+mime_guess = "2"#匹配文件类型
+chrono = "0.4"
+regex = "1"
+flate2 = "1"#编译期 gzip 压缩静态资源
