@@ -2,6 +2,8 @@
 /target
 **/target
 
+.claude/
+
 # 各 crate 目录下不应再单独出现 Cargo.lock（这是一个 workspace，统一用根目录的 Cargo.lock）
 axum-static-embed/Cargo.lock
 axum-static-embed-sample/Cargo.lock
